@@ -34,45 +34,17 @@
             color: white;
             padding: 30px;
             text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .header::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -50%;
-            width: 200%;
-            height: 200%;
-            background: repeating-linear-gradient(
-                45deg,
-                transparent,
-                transparent 10px,
-                rgba(255,255,255,0.1) 10px,
-                rgba(255,255,255,0.1) 20px
-            );
-            animation: slide 20s linear infinite;
-        }
-
-        @keyframes slide {
-            0% { transform: translate(-50%, -50%) rotate(0deg); }
-            100% { transform: translate(-50%, -50%) rotate(360deg); }
         }
 
         .header h1 {
             font-size: 2.5rem;
             margin-bottom: 10px;
-            position: relative;
-            z-index: 2;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
 
         .header p {
             font-size: 1.2rem;
             opacity: 0.9;
-            position: relative;
-            z-index: 2;
         }
 
         .controls {
@@ -197,7 +169,7 @@
     <div class="container">
         <div class="header">
             <h1>צוות ביטחון מענית</h1>
-            <p>מערכת ניהול זמן ולו"ז</p>
+            <p>מערכת ניהול זמן</p>
         </div>
         
         <div class="controls">
