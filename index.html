@@ -219,15 +219,7 @@
         function openAddEvent() {
             const calendarId = '2212cd9baefc4da68f36be6c61cdcb8bf3bb2acbe0d3fcf96980591028cdd4d8@group.calendar.google.com';
             const url = `https://calendar.google.com/calendar/render?action=TEMPLATE&src=${encodeURIComponent(calendarId)}`;
-            
-            // Force browser opening by using two-step approach
-            const newWindow = window.open('', '_blank');
-            if (newWindow) {
-                newWindow.location.href = url;
-            } else {
-                // Fallback if popup blocked
-                window.location.href = url;
-            }
+            const newWindow = window.open(url, '_blank');
         }
 
         // Function to refresh calendar
